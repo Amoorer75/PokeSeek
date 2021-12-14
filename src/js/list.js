@@ -20,7 +20,7 @@ const gen6 = document.getElementById('gen-6');
 const gen7 = document.getElementById('gen-7');
 const gen8 = document.getElementById('gen-8');
 
-async function createCard(id, container) {
+async function createCard(id) {
   await axios.get(url + id)
     .then(res => res.data)
     .then(data => {
@@ -56,7 +56,7 @@ async function createCard(id, container) {
       card.style.backgroundColor = color;
 
       card.appendChild(card_content);
-      container.appendChild(card);
+      pokeList.appendChild(card);
 
       statsCard(card, id);
     })
@@ -68,7 +68,7 @@ async function createCard(id, container) {
 //Filling each generation button
 async function gen1List() {
   for (let i = 1; i <= 151; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -82,7 +82,7 @@ gen1.addEventListener("click", (event) => {
 
 async function gen2List() {
   for (let i = 152; i <= 251; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -96,7 +96,7 @@ gen2.addEventListener("click", (event) => {
 
 async function gen3List() {
   for (let i = 252; i <= 386; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -110,7 +110,7 @@ gen3.addEventListener("click", (event) => {
 
 async function gen4List() {
   for (let i = 387; i <= 493; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -124,7 +124,7 @@ gen4.addEventListener("click", (event) => {
 
 async function gen5List() {
   for (let i = 494; i <= 649; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -138,7 +138,7 @@ gen5.addEventListener("click", (event) => {
 
 async function gen6List() {
   for (let i = 650; i <= 721; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -152,7 +152,7 @@ gen6.addEventListener("click", (event) => {
 
 async function gen7List() {
   for (let i = 722; i <= 809; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 
@@ -166,7 +166,7 @@ gen7.addEventListener("click", (event) => {
 
 async function gen8List() {
   for (let i = 810; i <= 898; i++) {
-    await createCard(i, pokeList);
+    await createCard(i);
   }
 }
 

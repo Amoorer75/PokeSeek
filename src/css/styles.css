@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
-
 *{
   margin: 0;
   padding: 0;
@@ -17,7 +16,12 @@ body{
     background-color:#FFFEED;
 }
 
+img{
+  image-rendering: pixelated;
+}
+
 #logo{
+    font-family: 'Play', sans-serif;
     font-size:4em;
     /*border: 1px solid green;*/
     color:white;
@@ -29,6 +33,11 @@ body{
     display:flex;
     border-bottom: 1px solid #e2e8f0;
     background-image: linear-gradient(to right,#6B03BD 20%,#9859E9);
+}
+
+.header button{
+  font-size: 18px;
+  font-family: 'Play', sans-serif;
 }
 
 .navbar{
@@ -118,15 +127,16 @@ input{
   padding-left: 10px;
 }
 
+.list-container{
+  text-align: center;
+}
+
 .gens{
-  display: inline-block;
-  position: relative;
-  left: 20%;
   padding:16px 25px;
   border-radius: 20em;
   border: none;
   background-color:#D3B8F5;
-  margin-bottom:30px
+  margin-bottom:30px;
 }
 
 .gens:hover{
@@ -169,13 +179,6 @@ input{
   cursor: pointer;
   font-size: 11px;
   font-family: 'Play', sans-serif;
-  /* border: solid red; */
-}
-
-img{
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
 }
 
 .card img{
@@ -189,7 +192,6 @@ img{
 }
 
 #random{
-  margin-left: 45%;
   padding:16px 25px;
   border-radius: 20em;
   border: none;
@@ -204,13 +206,12 @@ img{
   color: white;
 }
 
-#randomPokemon img{
+#randomPokemon .card-image-front{
   height: 300px;
   width: auto;
   position: relative;
-  left: -0px;
+  left: -18rem;
   top: 0px;
-  /* border: solid red; */ 
 }
 
 #randomPokemon .card-title{
@@ -247,6 +248,7 @@ img{
   top: -230px;
   left: 330px;
   box-shadow: 3px 5px 0px 0px rgba(8, 1, 1, 0.301); 
+  text-align: left;
 }
 
 .card_text{
@@ -270,6 +272,7 @@ img{
   /* border: solid red; */
   text-align: center;
   font-size: 28px;
+  font-family: 'Play', sans-serif;
   position: relative;
   top: -100px;
 }
@@ -285,7 +288,6 @@ img{
   margin-left: 30px;
   margin-right: 30px;
   margin-top: -40px;
-  position: relative;
 }
 
 .stats{  
@@ -391,16 +393,6 @@ input{
   height: auto;
 }
 
-  #random{
-    margin-left:35%;
-    margin-right:0%;
-    padding: 16px 25px;
-    border-radius: 20em;
-    border: none;
-    background-color:#D3B8F5;
-    margin-bottom:10px
-  }
-
   #randomPokemon .card{ 
     max-width: 60vh;
     height: 520px;
@@ -410,13 +402,11 @@ input{
     margin-right: 10px;
   }
 
-  #randomPokemon img{
+  #randomPokemon .card-image-front{
     height: 250px;
     width: auto;
-    /* border: solid red; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 0px;
   }
 
   .info-box{
@@ -430,7 +420,7 @@ input{
 
   .stats{  
     max-width: 60vh;
-    height: 95rem;
+    height: 94rem;
     margin: 20px;
     display: block;
     margin-left: 10px;
@@ -469,7 +459,6 @@ input{
 
   .stats .card_text{
     font-size: 28px;
-    text-align: left;
   }
   .dropbtn{
     display:block;

@@ -66,7 +66,7 @@ async function statsInfo(id, container) {
       //Get pokemon image
       const img = document.createElement('img');
       img.src = data.sprites.front_default;
-      img.className = 'card-image-front';
+      img.className = 'front-regular';
       stats_body.appendChild(img);
 
       //Get pokemon shiny image
