@@ -1,4 +1,4 @@
-#<a href="https://pokeseek.netlify.app/home.html"> PokéSeek</a>
+<a href="https://pokeseek.netlify.app/home.html"> # PokéSeek</a>
 ## About:
 PokéSeek is a Pokédex website that allows beginners and seasoned veterans to find more information on their favorite Pokémon that is not often provided in other Pokédex. It adds all the necessary information for any aspiring trainer under a sleek design and readable interface. The purpose of PokéSeek is to allow users to dive into more detailed looks on some of their favorite and newer Pokémon.
 
